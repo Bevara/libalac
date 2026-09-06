@@ -1,0 +1,19 @@
+{
+    "name": "libalac",
+    "description": "Apple Lossless (ALAC) decoder",
+    "filters":["alacdec"],
+    "help": "This filter decodes Apple Lossless audio using Apple's reference implementation.",
+    "support": [
+        "audio"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libalac.accessor",
+    "filter_source":{
+        "alacdec" : "dec_alac.c"
+    },
+    "extension":{
+      "m4a" : "audio",
+      "mp4" : "audio",
+      "caf" : "audio"
+    },
+    "licence_required":false
+}
