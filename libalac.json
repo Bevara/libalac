@@ -1,6 +1,7 @@
 {
     "name": "libalac",
-    "version": "1.0.1",
+    "Format": ["ALAC"],
+    "version": "1.0.2",
     "description": "Apple Lossless (ALAC) decoder",
     "filters":["alacdec"],
     "help": "This filter decodes Apple Lossless audio using Apple's reference implementation.",
@@ -11,11 +12,7 @@
     "filter_source":{
         "alacdec" : "dec_alac.c"
     },
-    "extension":{
-      "m4a" : "audio",
-      "mp4" : "audio",
-      "caf" : "audio"
-    },
+    "extension": {"caf": "audio"},
     "using": ["solver_minimal_1", "solver_1"],
     "patents": {
         "status": "royalty-free",
